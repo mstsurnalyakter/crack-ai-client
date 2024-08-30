@@ -14,18 +14,22 @@ const Header = () => {
       path: "/",
       type: "public",
     },
-
     {
-      name: "kitchen",
-      path: "/kitchen",
+      name: "Paintings",
+      path: "/paintings",
       type: "public",
     },
+    {
+      name: "Generate-Paint",
+      path: "/generate",
+      type: "private",
+    }
   ];
   return (
     <nav className="overflow-x-clip">
       {user && (
         <p className="text-center text-white bg-black py-2 bg-opacity-90">
-          Welcome Mr. {user?.displayName} ❤️‍🔥❤️‍🔥. Now You Can Watch All the
+          Welcome {user?.displayName} ❤️‍🔥❤️‍🔥. Now You Can Watch All the
           Recipies🍉🍉
         </p>
       )}
@@ -33,7 +37,7 @@ const Header = () => {
       <div className="w-11/12 mx-auto py-5 flex justify-between items-center relative">
         <Link to="/" className="logo">
           <span className="text-xl font-bold text-stone-700">
-            Auth 🍳 Template
+            Leanardo 🎨 Vinci
           </span>
         </Link>
 
@@ -46,6 +50,9 @@ const Header = () => {
           ))}
           {user && user?.email ? (
             <>
+              <NavLink key="/replies" to="/replies">
+                My Replies
+              </NavLink>
               <button className="cursor-pointer" onClick={logOut}>
                 Logout
               </button>
@@ -86,7 +93,7 @@ const Header = () => {
             >
               {menu.map((item) => (
                 <NavLink
-                  className="border-b-2 hover:border-orange-500 transition duration-200
+                  className="border-b-2 hover:border-[#0073E1] transition duration-200
                    "
                   key={item.path}
                   to={item.path}
@@ -96,6 +103,9 @@ const Header = () => {
               ))}
               {user && user?.email ? (
                 <>
+                  <NavLink key="/replies" to="/replies">
+                    My Replies
+                  </NavLink>
                   <button className="cursor-pointer" onClick={logOut}>
                     Logout
                   </button>

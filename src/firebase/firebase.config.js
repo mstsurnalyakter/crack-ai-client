@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAyd0c5kt2maFnfZP4aBShwgI9CKM6yyZM",
-  authDomain: "chef-note.firebaseapp.com",
-  projectId: "chef-note",
-  storageBucket: "chef-note.appspot.com",
-  messagingSenderId: "789656932914",
-  appId: "1:789656932914:web:a28d9f2dd2ba29eff1622b",
+  apiKey: "AIzaSyDDYXSaqdTZxBxFvOR_1yDK5RqdoDW5C4c",
+  authDomain: "crack-ai-1f238.firebaseapp.com",
+  projectId: "crack-ai-1f238",
+  storageBucket: "crack-ai-1f238.appspot.com",
+  messagingSenderId: "821497530025",
+  appId: "1:821497530025:web:558f34e2f0762b0f10cbb8",
 };
 
 // Initialize Firebase

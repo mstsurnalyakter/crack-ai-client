@@ -13,10 +13,11 @@ const Banner = () => {
       >
         <div className="text space-y-4  text-center md:text-start ">
           <h1 className="text-5xl font-bold">
-            Basic <span className="text-orange-400"> Authentication </span>{" "}
+            Basic <span className="text-[#3a94e7]"> Authentication </span>{" "}
             Template,
           </h1>
-          <div className=" max-w-[520px] md:rounded-full p-2 bg-orange-400 text-white">
+
+          <div className=" max-w-[520px] md:rounded-full p-2 bg-[#3a94e7] text-white">
             <marquee direction="right">
               For a limited time, enjoy 20% off on all items storewide! Yes, you
               heard that right! From trendy apparel and stylish accessories to
